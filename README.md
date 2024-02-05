@@ -170,7 +170,7 @@
 
 ### 3. Сайт-магазин на React js.
 
-[Сайт-магазин на React js](https://github.com/mirich90/react-store/blob/master/1.PNG?raw=true "Сайт-магазин на React js")
+![Сайт-магазин на React js](https://github.com/mirich90/react-store/blob/master/1.PNG?raw=true "Сайт-магазин на React js")
 
 [Ссылка на репозиторий](https://github.com/mirich90/react-store)
 
