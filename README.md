@@ -136,7 +136,8 @@
 
 ### 1. Блог-платформа.
 
-[Блог-платформа](https://raw.githubusercontent.com/mirich90/indyground/master/public/img/preview/2.PNG?raw=true "Блог-платформа")
+![Блог-платформа](https://raw.githubusercontent.com/mirich90/indyground/master/public/img/preview/2.PNG?raw=true "Блог-платформа")
+
 [Ссылка на репозиторий](https://github.com/mirich90/indyground)
 
 Демо
