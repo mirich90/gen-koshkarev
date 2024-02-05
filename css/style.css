@@ -75,7 +75,7 @@ a:hover {
   text-decoration: none;
 }
 .me-img {
-  background: url(/1.PNG) no-repeat center center;
+  background: url("../1.PNG") no-repeat center center;
   background-size: 100%;
   background-position: 0px;
   border-radius: 100%;
