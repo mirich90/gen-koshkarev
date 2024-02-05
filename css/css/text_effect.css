@@ -1,0 +1,481 @@
+/* BEGIN text effect glitch */
+.text__effect__glitch p {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  color: #fff;
+  font-weight: 600;
+}
+.text__effect__glitch p::before,
+.text__effect__glitch p::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: attr(data-text);
+}
+.text__effect__glitch p:before {
+  color: purple;
+  z-index: -1;
+  animation: glitch01 0.3s ease 0.3s infinite;
+}
+.text__effect__glitch p:after {
+  color: cyan;
+  z-index: -2;
+  animation: glitch02 0.3s ease infinite reverse;
+}
+
+@keyframes glitch01 {
+  0% {
+    transform: translate(-2px, 2px);
+  }
+  25% {
+    transform: translate(-4px, -4px);
+  }
+  50% {
+    transform: translate(2px, 2px);
+  }
+  75% {
+    transform: translate(2px, -4px);
+  }
+  100% {
+    transform: translate(-2px, 2px);
+  }
+}
+@keyframes glitch02 {
+  0% {
+    transform: translate(-2px, 2px);
+  }
+  25% {
+    transform: translate(-2px, -2px);
+  }
+  50% {
+    transform: translate(2px, 2px);
+  }
+  75% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(-2px, 2px);
+  }
+}
+/* END text effect glitch */
+
+/* BEGIN text effect flame */
+.text__effect__flame p {
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+    0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  color: #fff6a9;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: flame 12s infinite;
+}
+@keyframes flame {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+      0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+
+  50%,
+  100% {
+    color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  }
+}
+
+/* END text effect flame */
+
+/* BEGIN text effect light */
+.text__effect__light {
+  position: relative;
+  overflow: hidden;
+}
+.text__effect__light p {
+  position: relative;
+  color: transparent;
+  font-weight: 600;
+  filter: contrast(110%) brightness(190%);
+}
+.text__effect__light p::before,
+.text__effect__light p::after {
+  content: attr(data-text);
+  color: white;
+  filter: blur(0.02em);
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.text__effect__light p::after {
+  mix-blend-mode: difference;
+}
+
+.text__effect__light div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 10;
+  animation: light 5s infinite linear;
+  background: radial-gradient(circle, white, transparent 25%) 0 0 / 25% 25%,
+    radial-gradient(circle, white, black 25%) 50% 50% / 12.5% 12.5%;
+  top: -100%;
+  left: -100%;
+  mix-blend-mode: color-dodge;
+}
+
+@keyframes light {
+  100% {
+    transform: translate3d(50%, 50%, 0);
+  }
+}
+/* END text effect light */
+
+/* BEGIN text effect gradient */
+.text__effect__gradient {
+  position: relative;
+  overflow: hidden;
+}
+.text__effect__gradient p {
+  position: relative;
+  color: transparent;
+}
+.text__effect__gradient p::before,
+.text__effect__gradient p::after {
+  content: attr(data-text);
+  color: white;
+  filter: blur(0.02em);
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.text__effect__gradient p::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: -100%;
+  left: -100%;
+  pointer-events: none;
+  z-index: 10;
+  animation: gradient 3s infinite linear;
+  background: linear-gradient(45deg, blue, green);
+  mix-blend-mode: color-dodge;
+}
+
+@keyframes gradient {
+  100% {
+    transform: translate3d(50%, 50%, 0);
+  }
+}
+/* END text effect gradient */
+
+/* BEGIN text effect matrix */
+
+.text__effect__matrix {
+  overflow: hidden;
+}
+.text__effect__matrix p {
+  color: transparent;
+  font-weight: 700;
+  filter: contrast(1.5) brightness(1.1);
+  text-shadow: 2px 0px 2px #00000080, 2px -2px 3px #62ff67, 4px 3px 3px #62ff67,
+    2px 2px 3px #62ff67, 0 0 3px #62ff67;
+  animation: matrix 2s infinite linear;
+}
+@keyframes matrix {
+  25% {
+    text-shadow: 2px 0px 2px #000000, 2px -2px 3px #3aff6bbd,
+      4px 3px 3px #62ff67, 2px 2px 3px #62ff89, 0 0 3px #62ffb0;
+  }
+  50% {
+    text-shadow: 2px 0px 2px #000000, 2px -2px 3px #62ff67bd,
+      4px 3px 6px #62ff67, 2px 2px 3px #62ff89, 0 0 3px #62ffb0;
+  }
+  75% {
+    text-shadow: 2px 0px 2px #000000, 2px -2px 3px #62ff67bd,
+      4px 3px 3px #62ff67, 2px 2px 3px #62ff89, 0 0 3px #62ffb0;
+  }
+}
+
+/* END text effect matrix */
+
+/* BEGIN text effect split */
+.text__effect__split {
+  background: linear-gradient(90deg, #3498db 50%, #ffffff 50%);
+  position: relative;
+}
+.text__effect__split p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #3498db;
+  font-weight: 700;
+}
+.text__effect__split p::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: attr(data-text);
+  width: 50%;
+  color: #fff;
+  overflow: hidden;
+}
+/* END text effect split */
+
+/* BEGIN text effect line */
+.text__effect__line p {
+  position: relative;
+  color: white;
+}
+.text__effect__line p::before,
+.text__effect__line p::after {
+  position: absolute;
+  left: 50%;
+  content: "";
+  display: block;
+  height: 0.35em;
+  border-radius: 50%;
+  filter: blur(0.5px);
+}
+.text__effect__line p::before {
+  bottom: -0.2em;
+  width: 100%;
+  margin-left: -50%;
+  background: linear-gradient(90deg, crimson 25%, #000 100%);
+  animation: line01 1s infinite linear;
+}
+.text__effect__line p::after {
+  bottom: -0.29em;
+  width: 100%;
+  margin-left: -47%;
+  background-color: #000;
+  animation: line02 1s infinite linear;
+}
+
+@keyframes line01 {
+  0% {
+    width: 10%;
+    height: 0.1em;
+    bottom: -0.05em;
+  }
+  20% {
+    width: 30%;
+    height: 0.15em;
+  }
+  80% {
+    width: 100%;
+    height: 0.32em;
+  }
+}
+
+@keyframes line02 {
+  0% {
+    margin-left: -55%;
+  }
+  80% {
+    margin-left: -45%;
+  }
+}
+/* END text effect split */
+
+/* BEGIN text effect glitch2 */
+
+.text__effect__glitch2 p {
+  color: white;
+  animation: glitch2 1s linear infinite;
+}
+
+.text__effect__glitch2 p:before,
+.text__effect__glitch2 p:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+}
+
+.text__effect__glitch2 p:before {
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop {
+  2%,
+  64% {
+    transform: translate(2px, -2px);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  62% {
+    transform: translate(13px, -1px) skew(-13deg);
+  }
+}
+
+.text__effect__glitch2 p:after {
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitch2 {
+  2%,
+  64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}
+@keyframes glitchBotom {
+  2%,
+  64% {
+    transform: translate(-2px, 0);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0);
+  }
+  62% {
+    transform: translate(-22px, 5px) skew(21deg);
+  }
+}
+/* END text effect glitch2 */
+
+/* BEGIN text effect broken */
+.text__effect__broken p {
+  position: relative;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-shadow: 0 0 0.15em #1da9cc;
+  user-select: none;
+  white-space: nowrap;
+  filter: blur(0.007em);
+  animation: shake 2.5s linear forwards;
+}
+
+.text__effect__broken p span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  -webkit-clip-path: polygon(10% 0%, 44% 0%, 70% 100%, 55% 100%);
+  clip-path: polygon(10% 0%, 44% 0%, 70% 100%, 55% 100%);
+}
+
+.text__effect__broken p::before,
+.text__effect__broken p::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.text__effect__broken p::before {
+  animation: crack1 2.5s linear forwards;
+  -webkit-clip-path: polygon(0% 0%, 10% 0%, 55% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 10% 0%, 55% 100%, 0% 100%);
+}
+
+.text__effect__broken p::after {
+  animation: crack2 2.5s linear forwards;
+  -webkit-clip-path: polygon(44% 0%, 100% 0%, 100% 100%, 70% 100%);
+  clip-path: polygon(44% 0%, 100% 0%, 100% 100%, 70% 100%);
+}
+
+@keyframes shake {
+  5%,
+  15%,
+  25%,
+  35%,
+  55%,
+  65%,
+  75%,
+  95% {
+    filter: blur(0.018em);
+    transform: translateY(0.018em) rotate(0deg);
+  }
+
+  10%,
+  30%,
+  40%,
+  50%,
+  70%,
+  80%,
+  90% {
+    filter: blur(0.01em);
+    transform: translateY(-0.018em) rotate(0deg);
+  }
+
+  20%,
+  60% {
+    filter: blur(0.03em);
+    transform: translate(-0.018em, 0.018em) rotate(0deg);
+  }
+
+  45%,
+  85% {
+    filter: blur(0.03em);
+    transform: translate(0.018em, -0.018em) rotate(0deg);
+  }
+
+  100% {
+    filter: blur(0.007em);
+    transform: translate(0) rotate(-0.5deg);
+  }
+}
+
+@keyframes crack1 {
+  0%,
+  95% {
+    transform: translate(-50%, -50%);
+  }
+
+  100% {
+    transform: translate(-51%, -48%);
+  }
+}
+
+@keyframes crack2 {
+  0%,
+  95% {
+    transform: translate(-50%, -50%);
+  }
+
+  100% {
+    transform: translate(-49%, -53%);
+  }
+}
+
+/* BEGIN text effect broken */

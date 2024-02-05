@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/css/reset.css" />
+    <link rel="stylesheet" href="css/css/style.css" />
+    <link rel="stylesheet" href="css/css/particles.css" />
+
+    <script src="js/flame.js" defer></script>
+    <script src="js/loader.js" defer></script>
+    <title>Algoritm</title>
+  </head>
+
+  <body class="container">
+    <main>
+      <h1>JavaScript</h1>
+
+      <section>
+        <h2>Огонь на чистом JS (canvas)</h2>
+        <canvas id="flame"></canvas>
+      </section>
+
+      <section>
+        <h2>Loader на чистом JS (canvas)</h2>
+        <div>
+          <input
+            id="width"
+            type="range"
+            min="0.2"
+            max="1"
+            step="0.2"
+            value="0.7"
+          />
+          <input id="speed" type="range" min="2" max="20" step="1" value="10" />
+          <input
+            id="line-width"
+            type="range"
+            min="5"
+            max="200"
+            step="5"
+            value="30"
+          />
+          <input
+            id="loader-b"
+            type="range"
+            min="1"
+            max="20"
+            step="1"
+            value="4"
+          />
+          <input
+            id="loader-b2"
+            type="range"
+            min="1"
+            max="100"
+            step="1"
+            value="66"
+          />
+          <input
+            id="loader-b3"
+            type="range"
+            min="1"
+            max="20"
+            step="1"
+            value="13"
+          />
+        </div>
+        <canvas id="loader"></canvas>
+      </section>
+    </main>
+  </body>
+</html>

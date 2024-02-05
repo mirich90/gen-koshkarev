@@ -1,0 +1,16 @@
+canvas#flame {
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 3px;
+  background: #000;
+  cursor: none;
+}
+canvas#loader {
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 3px;
+  background: #000;
+  cursor: none;
+}

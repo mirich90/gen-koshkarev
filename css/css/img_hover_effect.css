@@ -1,0 +1,103 @@
+
+/* IMG */
+.item_block.img{
+    border: none;
+    background: none;
+}
+.item_block.img img{
+    transition: all .3s ease-in-out;
+}
+
+figure{
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    width: 100%;
+    box-shadow: 0 13px 27px -5px hsl(240deg 30% 28% / 25%), 0 8px 16px -8px hsl(0deg 0% 0% / 30%), 0 -6px 16px -6px hsl(0deg 0% 0% / 3%)
+}
+figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* image hover zoom */
+.img__hover__zoom:hover  img{
+    transform: scale(1.2);
+}
+/* image hover zoom out*/
+.img__hover__zoomout  img{
+    transform: scale(1.2);
+}
+.img__hover__zoomout:hover  img{
+    transform: scale(1);
+}
+/* image hover slide*/
+.img__hover__slide  img{
+    margin-left: 20px;
+    transform: scale(1.5);
+}
+.img__hover__slide:hover  img{
+    margin-left: 0;
+}
+/* image hover rotate*/
+.img__hover__rotate:hover  img{
+    transform: rotate(15deg) scale(1.4);
+}
+/* image hover perspective Y*/
+.img__hover__perspectiveY:hover figure, .img__hover__perspectiveY figcaption {
+    transform: rotateY(180deg);
+}
+.img__hover__perspectiveY figure {
+    position: relative;
+    perspective: 1000;
+    transition: .5s;
+    transform-style: preserve-3d;
+}
+/* image hover perspective X*/
+.img__hover__perspectiveX:hover figure, .img__hover__perspectiveX figcaption {
+    transform: rotateX(180deg);
+}
+.img__hover__perspectiveX figure {
+    position: relative;
+    perspective: 1000;
+    transition: .5s;
+    transform-style: preserve-3d;
+}
+/* image hover sepia*/
+.img__hover__sepia  img{
+    filter: sepia(100%);
+}
+.img__hover__sepia:hover  img{
+    filter: sepia(0);
+}
+/* image hover blur*/
+.img__hover__blur  img{
+    filter: blur(3px);
+}
+.img__hover__blur:hover  img{
+    filter: blur(0);
+}
+/* image hover grayscale*/
+.img__hover__grayscale  img{
+    filter: grayscale(100%);
+}
+.img__hover__grayscale:hover  img{
+    filter: grayscale(0);
+}
+/* image hover flash*/
+.img__hover__flash{
+    background: #fff;
+}
+.img__hover__flash:hover  img{
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+}
+@keyframes flash {
+    0% {
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+    }
+}

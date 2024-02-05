@@ -1,0 +1,25 @@
+@media screen and (max-width: 48em) {
+  .right,
+  .left {
+    float: none;
+    position: relative !important;
+    width: 100%;
+    min-height: 500px;
+  }
+  .handmade {
+    text-align: center !important;
+    margin-top: 0px !important;
+  }
+}
+
+@media screen and (max-width: 75em) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 60em) {
+  body {
+    font-size: 14px;
+  }
+}
