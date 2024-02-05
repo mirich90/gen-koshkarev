@@ -140,7 +140,7 @@
 
 [Ссылка на репозиторий](https://github.com/mirich90/indyground)
 
-Демо
+[Демо](https://test2.cg28577.tmweb.ru/)
 
 Сайт разрабатывался для закрепления паттерна MVC (модель-представление-контроллер). Еще одна цель - написать мини-фреймворк на чистом PHP, JS и HTML без использования сторонних библиотек, полностью с нуля
 
@@ -156,8 +156,9 @@
 
 ### 2. Блог-платформа (2 версия).
 
-Блог-платформа.
-Ссылка на репозиторий
+![Блог-платформа.](https://github.com/mirich90/framework/blob/master/1.PNG?raw=true "Блог-платформа")
+
+[Ссылка на репозиторий](https://github.com/mirich90/framework)
 
 2-ая версия блога-платформы. В процессе. Рефакторинг ядра плюс несколько полезных нововведений:
 
@@ -169,10 +170,11 @@
 
 ### 3. Сайт-магазин на React js.
 
-Сайт-магазин на React js
-Ссылка на репозиторий
+[Сайт-магазин на React js](https://github.com/mirich90/react-store/blob/master/1.PNG?raw=true "Сайт-магазин на React js")
 
-Демо
+[Ссылка на репозиторий](https://github.com/mirich90/react-store)
+
+[Демо](https://react-store-nu-sepia.vercel.app/)
 
 Проект разрабатывался для закрепления React (с TypeScript) и взаимодействвия его с сервером через API. В качестве API был выбран mockapi.io
 
@@ -183,10 +185,11 @@
 
 ### 4. Блог на NuxtJs.
 
-Блог на NuxtJs
-Ссылка на репозиторий
+![Блог на NuxtJs](https://github.com/mirich90/nuxt-blog/blob/master/screen_1.png?raw=true "Блог на NuxtJs")
 
-Ссылка на репозиторий API
+[Ссылка на репозиторий](https://github.com/mirich90/nuxt-blog)
+
+[Ссылка на репозиторий API](https://github.com/genkoshkarev/api-php-for-nuxt)
 
 - Проект разрабатывался для закрепления NuxtJs, Vue, Vuex и взаимодействвия его с сервером через API
 - Логин и регистрация пользователей-администраторов блог
@@ -197,8 +200,9 @@
 
 ### 5. Сайт с отзывами игр на VueJs + Vuex.
 
-Сайт с отзывами игр на VueJs + Vuex.
-Ссылка на репозиторий
+![Сайт с отзывами игр на VueJs + Vuex.](https://github.com/mirich90/vue-reviews/blob/master/1.png?raw=true "Сайт с отзывами игр на VueJs + Vuex")
+
+[Ссылка на репозиторий](https://github.com/mirich90/vue-reviews)
 
 Проект разрабатывался для закрепления Vuex и взаимодействвия его с сервером через API. В качестве API был выбран json-server
 
@@ -208,7 +212,7 @@
 
 ### 6. Плагины для игрового движка.
 
-Ссылка на репозиторий
+[Ссылка на репозиторий](https://github.com/mirich90/game_plugins)
 
 Плагины для двухмерного игрового движка, позволяющие превратить пошаговый геймплей в игру в духе "legend of zelda" с боевой системы в реальном времени. Во время создания плагинов было много взаимодействиями с инструментами, которые не часто бывают на сайтах
 
@@ -219,10 +223,11 @@
 
 ### 7. Блог на Laravel.
 
-Блог на Laravel
-Ссылка на репозиторий
+![Блог на Laravel](https://github.com/mirich90/laravel_blog/blob/master/1.PNG?raw=true "Блог на Laravel")
 
-Демо
+[Ссылка на репозиторий](https://github.com/mirich90/laravel_blog)
+
+[Демо](http://blog.cg28577.tmweb.ru/)
 
 Блог на Laravel c возможностью создания статей через визуальный редактор с категориями и регистрацией. Создавался для изучения Laravel, Artisan
 
@@ -235,8 +240,9 @@
 
 ### 8. Мини-блог на Laravel+vue.
 
-Блог на Laravel+Vue
-Ссылка на репозиторий
+![Блог на Laravel+Vue](https://github.com/mirich90/laravel_vue_spa/blob/master/1.PNG?raw=true "Блог на Laravel+Vue")
+
+[Ссылка на репозиторий](https://github.com/mirich90/laravel_vue_spa)
 
 Проект разрабатывался для закрепления Laravel как SPA-приложение в связке с Vue.js.
 
@@ -244,10 +250,11 @@
 
 ### 9. Блог на React(Next)+sanity.
 
-Блог на React(Next)+sanity
-Ссылка на репозиторий
+![Блог на React(Next)+sanity](https://raw.githubusercontent.com/mirich90/next-blog/main/1.PNG "Блог на React(Next)+sanity")
 
-Демо
+[Ссылка на репозиторий](https://github.com/mirich90/next-blog)
+
+[Демо](https://next-blog-phi-neon.vercel.app/)
 
 Проект разрабатывался для закрепления NextJs и пробы админки sanity.io.
 
@@ -256,8 +263,11 @@
 
 ### 10. TODO на react.
 
-TODO на react
-Ссылка на репозиторий
+![TODO на react](https://github.com/mirich90/react_todo/blob/master/1.PNG?raw=true "TODO на react")
+
+[Демо](https://react-todo-tau-gules.vercel.app/)
+
+[Ссылка на репозиторий](https://github.com/mirich90/react_todo)
 
 Проект разрабатывался при изучении react.
 
@@ -266,8 +276,11 @@ TODO на react
 
 ### 11. Муз. проигрыватель на react.
 
-Муз. проигрыватель на react
-Ссылка на репозиторий
+![Муз. проигрыватель на react](https://github.com/mirich90/react_music/blob/master/1.PNG?raw=true "Муз. проигрыватель на react")
+
+[Ссылка на репозиторий](https://github.com/mirich90/react_music)
+
+[Демо](https://react-music-three-rouge.vercel.app/)
 
 Проект разрабатывался для закрепления react и взаимодействвия c Context+Provider
 
@@ -275,8 +288,9 @@ TODO на react
 
 ### 12. Мини-компоненты на CSS.
 
-Сайт с отзывами игр на VueJs + Vuex.
-Различные компоненты и эффекты на чистом CSS на отдельной странице
+![Мини-компоненты на CSS](https://raw.githubusercontent.com/mirich90/gen-koshkarev/master/2.PNG "Мини-компоненты на CSS")
+
+Различные компоненты и эффекты на чистом CSS на [отдельной странице](./css.html)
 
 - Эффекты текста
 - Loader
@@ -284,18 +298,20 @@ TODO на react
 
 ### 13. Партиклы на чистом js.
 
-Сайт с отзывами игр на VueJs + Vuex.
-Генерация частиц на чистом JS на отдельной странице
+![Партиклы на чистом js](https://raw.githubusercontent.com/mirich90/gen-koshkarev/master/3.PNG "Партиклы на чистом js")
+
+Генерация частиц на чистом JS на [отдельной странице](./js-particles.html)
 
 - Генерация пиксельного огня
 - Генератор лоадера
 
 ### 14. Визуальный редактор кода на чистом JS.
 
-Визуальный редактор кода на чистом JS.
-Ссылка на репозиторий
+![Визуальный редактор кода на чистом JS.](https://github.com/genkoshkarev/blog-platform/raw/main/Screen_2.PNG?raw=true "Визуальный редактор кода на чистом JS")
 
-Демо
+[Ссылка на репозиторий](https://github.com/genkoshkarev/visual-editor)
+
+[Демо](./editor.html)
 
 Визуальный редактор кода на чистом JS в духе яндекс-дзена и Medium.com
 
